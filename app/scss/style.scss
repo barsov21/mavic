@@ -1,7 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-@import 'global';
+@import "global";
 
 .header {
     position: fixed;
@@ -47,6 +47,15 @@
         & + .menu__list-item {
             padding-left: 20px;
         }
+        &.active a {
+            text-decoration: underline;
+        }
+    }
+    &__list-phone {
+        display: none;
+    }
+    &__btn {
+        display: none;
     }
 }
 
